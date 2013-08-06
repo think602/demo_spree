@@ -4,3 +4,4 @@
 /tmp
 
 database.yml
+public/assets/*
