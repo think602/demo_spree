@@ -1,0 +1,20 @@
+common: &common
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: root
+  password:
+
+development:
+  <<: *common
+  database: demo_spree_development
+
+test:
+  <<: *common
+  database: demo_spree_test
+  
+production:
+  <<: *common
+  database: demo_spree_production
+  

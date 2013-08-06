@@ -1,0 +1,6 @@
+# default
+/.bundle
+/log/*.log
+/tmp
+
+database.yml
