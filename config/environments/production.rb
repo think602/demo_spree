@@ -65,11 +65,13 @@ DemoSpree::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   
+  config.default_url_options[:host] = 'think602-demo-spree.herokuapp.com'
   
   # heroku config:set MANDRILL_USERNAME=username@example.com
   # heroku config:set MANDRILL_APIKEY=abc
   # 
   ActionMailer::Base.smtp_settings = {
+    host:              'think602-demo-spree.herokuapp.com',
     port:              '587',
     address:           'smtp.mandrillapp.com',
     user_name:         ENV['MANDRILL_USERNAME'],
